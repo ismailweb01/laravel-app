@@ -6,8 +6,13 @@ use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    public function test_application_test_suite_runs(): void
+    public function test_health_endpoint_returns_success(): void
     {
-        $this->assertTrue(true);
+        $response = $this->get('/health');
+
+        $response->assertStatus(200);
+        $response->assertJson([
+            'status' => 'ok',
+        ]);
     }
 }
