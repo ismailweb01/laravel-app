@@ -67,5 +67,4 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /var/www/laravel-app
-            ./deploy.sh
+  /var/www/laravel-releases/scripts/deploy.sh
