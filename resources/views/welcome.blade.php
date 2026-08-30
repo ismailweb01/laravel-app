@@ -11,7 +11,7 @@
     <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
       
        <h1>Welcome to Laravel 101</h1>
-       <p>Rollback test version</p>
+       <p class="text-[#1b1b18] dark:text-[#fdfdfc]">This is a simple Laravel application.</p>
       
     </body>
 </html>
